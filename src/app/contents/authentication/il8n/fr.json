@@ -1,0 +1,129 @@
+{
+    "MENU": {
+        "AUTH": {
+            "AUTH": "L'authentification",
+            "LOGIN": "Connexion",
+            "SIGN_UP": "Inscrivez -",
+            "FORGOT": "Mot De Passe Oublié",
+            "LOCK": "Page De Verrouillage",
+            "PROFILE": "Profil"
+        }
+    },
+    "HEADER": {
+        "HEADING": "Triangulaire"
+    },
+    "LOGIN": {
+        "TITLE": "Connexion",
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Veuillez entrer votre adresse e-mail.",
+            "PLEASE_VALID": "Veuillez entrer une adresse email valide."
+        },
+        "PASSWORD": {
+            "LABEL": "mot de passe",
+            "PLEASE_ENTER": "Veuillez entrer votre mot de passe."
+        },
+        "REMEMBER": "Se Souvenir De Moi",
+        "FORGOT": "Mot de passe oublié?",
+        "BUTTON": "Journal en",
+        "SIGNUP_LINK": "N'avez pas de compte? Créer un maintenant",
+        "SOCIAL": {
+            "OR": "ou de connexion avec"
+        },
+        "MESSAGES": {
+            "ACCESS_DENIED": "Nom D'Utilisateur / Mot De Passe Incorrect"
+        }
+    },
+    "SIGNUP": {
+        "TITLE": "Inscrivez -",
+        "NAME": {
+            "LABEL": "nom",
+            "PLEASE_ENTER": "Veuillez entrer votre nom"
+        },
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Veuillez entrer votre adresse e-mail",
+            "PLEASE_VALID": "Veuillez entrer une adresse email valide"
+        },
+        "PASSWORD": {
+            "LABEL": "mot de passe",
+            "PLEASE_ENTER": "Veuillez entrer un mot de passe",
+            "MIN_LENGTH": "Votre mot de passe doit être supérieur à 8 caractères de long",
+            "SAME_PASSWORD": "Vous devez entrer le même mot de passe"
+        },
+        "PASSWORD_CONFIRM": {
+            "LABEL": "confirmer le mot de passe"
+        },
+        "BUTTON": "Inscrivez -",
+        "HAVE_LOGIN": "Avez déjà un compte? Connectez-vous ici.",
+        "MESSAGES": {
+            "CONFIRM_SENT": "Envoi de notre Confirmation",
+            "LOGIN_NOW": "Connexion",
+            "NO_SIGNUP": "N'a pas pu signer utilisateur"
+        }
+    },
+    "LOCK": {
+        "TITLE": "Bienvenue",
+        "LOGGED_OUT": "Vous avez été déconnecté en raison de l'oisiveté. Entrez votre mot de passe pour ouvrir une session.",
+        "PASSWORD": {
+            "LABEL": "mot de passe",
+            "PLEASE_ENTER": "Veuillez entrer votre mot de passe."
+        },
+        "LOGIN": "Journal en",
+        "LOGOUT": "Déconnecter",
+        "MESSAGES": {
+            "ACCESS_DENIED": "Nom D'Utilisateur / Mot De Passe Incorrect"
+        }
+    },
+    "FORGOT": {
+        "TITLE": "Vous avez oublié votre mot de passe?",
+        "ENTER_EMAIL": "Veuillez entrer votre e-mail ci-dessous",
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Veuillez entrer votre adresse e-mail.",
+            "PLEASE_VALID": "Veuillez entrer une adresse email valide."
+        },
+        "RESET": "Réinitialiser",
+        "LOGIN": "Se souvenait-il? Les identifiants de connexion ici",
+        "MESSAGES": {
+            "RESET_SENT": "Votre nouveau mot de passe a été envoyé par la poste",
+            "LOGIN_NOW": "Connexion",
+            "NO_RESET": "Impossible de réinitialiser mot de passe des utilisateurs"
+        }
+    },
+    "PROFILE": {
+        "TITLE": "Profil",
+        "NAME": {
+            "LABEL": "nom",
+            "PLEASE_ENTER": "Veuillez entrer votre nom"
+        },
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Veuillez entrer votre adresse e-mail",
+            "PLEASE_VALID": "Veuillez entrer une adresse email valide"
+        },
+        "LOCATION": {
+            "LABEL": "emplacement"
+        },
+        "WEBSITE": {
+            "LABEL": "site web"
+        },
+        "BIO": {
+            "LABEL": "bio"
+        },
+        "TWITTER": {
+            "LABEL": "twitter"
+        },
+        "PASSWORD": {
+            "LABEL": "nouveau mot de passe",
+            "CURRENT": "actuel",
+            "PLEASE_ENTER": "Veuillez entrer un mot de passe",
+            "MIN_LENGTH": "Votre mot de passe doit être supérieur à 8 caractères de long",
+            "SAME_PASSWORD": "Vous devez entrer le même mot de passe"
+        },
+        "PASSWORD_CONFIRM": {
+            "LABEL": "confirmer le mot de passe"
+        },
+        "BUTTON": "Paramètres De Mise À Jour"
+    }
+}

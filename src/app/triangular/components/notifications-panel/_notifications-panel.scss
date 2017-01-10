@@ -1,0 +1,35 @@
+// Notification Panel
+.admin-notifications {
+  // - Tab adjustment to match toolbar height
+  md-tabs-canvas, md-pagination-wrapper {
+    height: 64px;
+  }
+  md-tabs-content-wrapper {
+    top: 64px;
+  }
+  // - Tab icon adjustment to match toolbar positino
+  .md-tab .md-font {
+    font-size: 2.0rem;
+    vertical-align: middle;
+    line-height: 4rem;
+  }
+  // - List item font size
+  md-list-item {
+    p {
+      font-size: 1.3rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-right: 2rem;
+    }
+    md-icon, .md-list-item-inner md-icon {
+      margin-right: 12px;
+    }
+  }
+  // - List items in column layout
+  md-list-item[layout="column"] {
+    min-height: initial;
+    margin-bottom: 3rem;
+  }
+}
+

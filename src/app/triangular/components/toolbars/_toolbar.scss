@@ -1,0 +1,60 @@
+// Breadcrumbs
+.breadcrumb {
+  display: inline-block;
+}
+
+// Toolbar Search
+.toolbar-search {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font-size: 0.8em;
+  transition: max-width .5s, opacity 0.3s .3s;
+  display: block !important;
+  max-width: 200px;
+  opacity: 1;
+  text-indent: 1em;
+  &::placeholder {
+    color: inherit;
+  }
+  &.ng-show {
+    @include fadeIn();
+  }
+  &.ng-hide {
+    transition: max-width .3s .3s, opacity 0.5s;
+    max-width: 0px;
+    opacity: 0;
+  }
+}
+
+// Toolbar Avatar
+.toolbar-user-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+// Button
+.toolbar-button {
+  md-icon {
+    position: relative;
+  }
+}
+
+// Badges
+$tri-badge-size: 2.2rem;
+.toolbar-button-badge {
+  display: block;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  right: 0.2rem;
+  top: 0.8rem;
+  line-height: 2rem;
+  border-radius: 50%;
+}
+
+.toolbar-button-badge-new {
+  @include wobble();
+}

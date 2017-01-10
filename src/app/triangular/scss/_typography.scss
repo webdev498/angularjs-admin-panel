@@ -1,0 +1,162 @@
+// Typography
+
+
+// set template font family
+button, select, html, textarea, input {
+  font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+h1 {
+  font-size: 3.400rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+h2 {
+  font-size: 2.400rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+h3 {
+  font-size: 2.000rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+h4 {
+  font-size: 1.600rem;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  margin: 1.6rem 0;
+}
+strong {
+  font-weight: 500;
+}
+blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.12);
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 16px;
+}
+
+code:not(.hljs) {
+  color: #4285f4;
+  -webkit-font-smoothing: auto;
+  font-weight: bold;
+}
+
+code.hljs.html, code.hljs.javascript {
+  padding: 16px;
+  font-size: 1.400rem;
+}
+
+// - Font Weight Classes
+$i : 100;
+@while $i <= 900 {
+  .font-weight-#{$i} {
+    font-weight: $i !important;
+  }
+  $i : $i + 100;
+}
+
+// - Font Size Classes
+$i : 1;
+@while $i <= 20 {
+  .font-size-#{$i} {
+    font-size: #{$i}rem !important;
+    min-width: 1em;
+    line-height: 1;
+  }
+  $i : $i + 1;
+}
+
+// Line height classes
+.line-height-normal {
+  line-height: 1em;
+}
+.line-height-medium {
+  line-height: 1.2em;
+}
+.line-height-big {
+  line-height: 1.5em;
+}
+.line-height-bigger {
+  line-height: 1.75em;
+}
+
+// - Font Icons
+md-icon[md-font-icon] {
+  height: auto;
+  font-size: 2rem;
+}
+
+// - Text Ellipsis
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+// - Text align classes
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+
+// - Font styles
+.font-style-normal {
+  font-style: normal;
+}
+.font-style-italic {
+  font-style: italic;
+}
+
+// Text light
+.text-light {
+  color: rgba(255, 255, 255, 1);
+}
+.text-dark {
+  color: rgba(0, 0, 0, 1);
+}
+.text-gray {
+  color: rgba(0, 0, 0, .78);
+}

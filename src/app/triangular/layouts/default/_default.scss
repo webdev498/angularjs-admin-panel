@@ -1,0 +1,48 @@
+// Admin Content area
+#admin-panel {
+  overflow: hidden;
+  position: relative;
+  > md-content {
+    z-index: 3;
+  }
+}
+#admin-panel-content-view {
+  display: block;
+  position: relative;
+  padding-bottom: 65px;
+  min-height: calc(100vh - 64px);
+  -webkit-backface-visibility: hidden;
+}
+
+
+// Side menu Bar
+.admin-sidebar-left {
+  overflow-x:hidden;
+  md-content {
+    overflow-x:hidden;
+  }
+}
+.admin-sidebar-left.md-locked-open {
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  -ms-overflow-style: none; /* ie fix for removing scrollbars */
+  &.admin-sidebar-collapsed {
+    min-width: 48px;
+    max-width: 48px;
+    transition: all .3s;
+    &.hover {
+      min-width: 260px;
+      max-width: 260px;
+    }
+  }
+}
+
+// Toolbar
+.admin-toolbar {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14);
+  z-index: 4;
+  .md-button {
+    height: 48px;
+  }
+}

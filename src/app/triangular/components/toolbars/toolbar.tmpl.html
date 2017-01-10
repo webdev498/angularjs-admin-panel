@@ -1,0 +1,62 @@
+<div class="md-toolbar-tools">
+    <md-button class="md-icon-button" ng-if="!vm.hideMenuButton()" ng-click="vm.openSideNav('left')" aria-label="side navigation">
+        <md-icon md-font-icon="icon-menu"></md-icon>
+    </md-button>
+
+    <h2 hide-sm flex>
+        <span ng-repeat="crumb in vm.breadcrumbs.crumbs">
+            <span translate>{{crumb.name}}</span>
+            <md-icon md-font-icon="icon-chevron-right" ng-if="!$last">
+        </span>
+    </h2>
+
+    <md-menu>
+        <md-button class="md-icon-button" aria-label="language" ng-click="$mdOpenMenu()" aria-label="change language">
+            <md-icon md-font-icon="icon-language"></md-icon>
+        </md-button>
+        <md-menu-content width="3">
+            <md-menu-item ng-repeat="language in ::vm.languages">
+                <md-button ng-click="vm.switchLanguage(language.key)" translate="{{::language.name}}" aria-label="{{::language.name}}"></md-button>
+            </md-menu-item>
+        </md-menu-content>
+    </md-menu>
+
+    <md-button class="md-icon-button toolbar-button animated" ng-click="vm.toggleNotificationsTab(0)" aria-label="side navigation">
+        <md-icon md-font-icon="icon-email"></md-icon>
+        <span class="toolbar-button-badge animated" theme-background="accent" ng-class="{ 'toolbar-button-badge-new' : vm.emailNew }">5</span>
+    </md-button>
+
+    <md-button class="md-icon-button toolbar-button" ng-click="vm.toggleNotificationsTab(1)">
+        <md-icon md-font-icon="fa fa-bell-o"></md-icon>
+        <span class="toolbar-button-badge" theme-background="accent">2</span>
+    </md-button>
+
+    <md-menu>
+        <md-button aria-label="Open user menu" ng-click="$mdOpenMenu()" aria-label="side navigation">
+            <img class="toolbar-user-avatar" src="assets/images/avatars/avatar-5.png">
+            Christos
+        </md-button>
+        <md-menu-content width="4">
+            <md-menu-item>
+                <md-button ng-click="vm.toggleNotificationsTab(2)" aria-label="side navigation">
+                    <md-icon md-font-icon="icon-settings"></md-icon>
+                    <span translate="ADMIN.TOOLBAR.SETTINGS"></span>
+                </md-button>
+            </md-menu-item>
+            <md-menu-item>
+                <md-button href="#/profile" aria-label="side navigation">
+                    <md-icon md-font-icon="icon-person"></md-icon>
+                    <span translate="ADMIN.TOOLBAR.PROFILE"></span>
+                </md-button>
+            </md-menu-item>
+            <md-menu-divider></md-menu-divider>
+            <md-menu-item>
+                <md-button href="#/login" aria-label="side navigation">
+                    <md-icon md-font-icon="icon-exit-to-app"></md-icon>
+                    <span translate="ADMIN.TOOLBAR.LOGOUT"></span>
+                </md-button>
+            </md-menu-item>
+        </md-menu-content>
+    </md-menu>
+</div>
+

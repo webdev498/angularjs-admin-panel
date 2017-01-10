@@ -1,0 +1,60 @@
+<div layout="row" flex layout-padding layout-fill layout-align="center center">
+    <div flex="40" flex-lg="50" flex-md="70" flex-sm="100">
+        <md-card>
+            <md-toolbar>
+                <div class="padding-20 text-center">
+                    <div><img ng-src="{{::vm.triSettings.logo}}" alt="{{vm.triSettings.name}}"></div>
+                    <h1 class="md-headline" translate>LOGIN.TITLE</h1>
+                </div>
+            </md-toolbar>
+
+            <md-content class="md-padding">
+                <form name="login">
+                    <md-input-container>
+                        <label for="email" translate>LOGIN.EMAIL.LABEL</label>
+                        <input id="email" label="email" name="email" type="email" ng-model="vm.user.email" required/>
+                        <div ng-messages="login.email.$error" ng-if="login.email.$dirty">
+                            <div ng-message when="required"><span translate>LOGIN.EMAIL.PLEASE_ENTER</span></div>
+                            <div ng-message when="email"><span translate>LOGIN.EMAIL.PLEASE_VALID</span></div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container>
+                        <label for="password" translate>LOGIN.PASSWORD.LABEL</label>
+                        <input  id="password" label="password" name="password" type="password" ng-model="vm.user.password" required/>
+                        <div ng-messages for="login.password.$error" ng-if="login.password.$dirty">
+                            <div ng-message when="required"><span translate>LOGIN.PASSWORD.PLEASE_ENTER</span></div>
+                        </div>
+                    </md-input-container>
+
+                    <div layout="row" layout-align="space-between center">
+                        <md-input-container>
+                            <md-checkbox ng-model="vm.user.rememberMe">
+                                <span translate>LOGIN.REMEMBER</span>
+                            </md-checkbox>
+                        </md-input-container>
+
+                        <md-input-container>
+                            <md-button flex class="md-primary" href="#/forgot" translate="LOGIN.FORGOT" aria-label="{{'LOGIN.FORGOT' | translate}}"></md-button>
+                        </md-input-container>
+                    </div>
+
+                    <md-button class="md-raised md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10"  ng-click="vm.loginClick()" ng-disabled="login.$invalid" translate="LOGIN.BUTTON" aria-label="{{'LOGIN.BUTTON' | translate}}"></md-button>
+
+                    <md-button class="md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10" href="#/signup" translate="LOGIN.SIGNUP_LINK" aria-label="{{'LOGIN.SIGNUP_LINK' | translate}}"></md-button>
+
+                    <div class="social-login">
+                        <md-divider></md-divider>
+
+                        <div class="text-center margin-20" translate>LOGIN.SOCIAL.OR</div>
+
+                        <div layout="row" layout-align="space-between center"  layout-margin>
+                            <md-button href="#" ng-repeat="social in ::vm.socialLogins" class="md-icon-button" ng-style="{ 'background-color': social.color }" aria-label="{{social.icon}}">
+                                <md-icon md-font-icon="{{::social.icon}}"></md-icon>
+                            </md-button>
+                        </div>
+                    </div>
+                </form>
+            </md-content>
+        </md-card>
+    </div>
+</div>

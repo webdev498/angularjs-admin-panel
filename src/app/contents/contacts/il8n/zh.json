@@ -1,0 +1,12 @@
+{
+    "MENU": {
+        "CONTACTS": {
+            "CONTACTS": "联系方式",
+            "ORGANIZATIONS": "组织"
+        }
+    },
+    "CONTACTS": {
+		"ORGANIZATION": "organization",
+		"SELECTED": "selected"
+	}
+}

@@ -1,0 +1,55 @@
+{
+  "name": "triangular",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.4.5",
+    "angular-animate": "1.4.5",
+    "angular-cookies": "1.4.5",
+    "angular-touch": "1.4.5",
+    "angular-sanitize": "1.4.5",
+    "angular-resource": "1.4.5",
+    "angular-messages": "1.4.5",
+    "angular-ui-router": "~0.2.13",
+    "angular-material": "0.10.1",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-partial": "~2.7.2",
+    "angular-translate-storage-cookie": "~2.7.2",
+    "angular-translate-storage-local": "~2.7.2",
+    "angular-local-storage": "~0.2.2",
+    "font-awesome": "~4.3.0",
+    "material-design-iconic-font": "~1.1.1",
+    "angular-google-chart": "~0.0.11",
+    "textAngular": "~1.3.7",
+    "countUp.js": "1.5.0",
+    "angular-moment": "~0.10.1",
+    "animate.css-scss": "https://github.com/geoffgraham/animate.scss.git#master",
+    "jquery": "~2.1.3",
+    "angular-highlightjs": "0.4.1",
+    "angular-chart.js": "~0.7.1",
+    "angular-google-maps": "~2.1.0",
+    "angular-linkify": "~1.2.0",
+    "angular-ui-calendar": "~1.0.0",
+    "weather-icons": "https://github.com/chk1/weather-icons.git#master",
+    "highlightjs": "~8.7.0",
+    "flat-surface-shader": "*",
+    "restangular": "~1.5.1",
+    "angular-jwt": "~0.0.9",
+    "angular-material-data-table": "0.8.0",
+    "angular-digest-hud": "~0.1.13",
+    "angular-gravatar": "~0.4.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.5"
+  },
+  "resolutions": {
+    "angular": "1.4.5"
+  },
+  "overrides": {
+    "weather-icons": {
+      "main": [
+        "./css/weather-icons.css",
+        "./font/*"
+      ]
+    }
+  }
+}

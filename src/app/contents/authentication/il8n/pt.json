@@ -1,0 +1,129 @@
+{
+    "MENU": {
+        "AUTH": {
+            "AUTH": "Autenticação",
+            "LOGIN": "Login",
+            "SIGN_UP": "Assinar",
+            "FORGOT": "Esqueci Minha Senha",
+            "LOCK": "Página De Bloqueio",
+            "PROFILE": "Perfil"
+        }
+    },
+    "HEADER": {
+        "HEADING": "Triangular"
+    },
+    "LOGIN": {
+        "TITLE": "Login",
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Por favor, digite seu endereço de e-mail.",
+            "PLEASE_VALID": "Por favor introduza um endereço de email válido."
+        },
+        "PASSWORD": {
+            "LABEL": "palavra-passe",
+            "PLEASE_ENTER": "Por favor, digite a sua senha."
+        },
+        "REMEMBER": "Lembrar-Me",
+        "FORGOT": "Esqueceu palavra-passe?",
+        "BUTTON": "De registo em",
+        "SIGNUP_LINK": "Não tem uma conta? Crie um agora",
+        "SOCIAL": {
+            "OR": "ou faça o login com"
+        },
+        "MESSAGES": {
+            "ACCESS_DENIED": "Nome De Utilizador / Palavra-Passe Incorrecta"
+        }
+    },
+    "SIGNUP": {
+        "TITLE": "Assinar",
+        "NAME": {
+            "LABEL": "nome",
+            "PLEASE_ENTER": "Por favor digite seu nome"
+        },
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Por favor, digite seu endereço de e-mail",
+            "PLEASE_VALID": "Por favor introduza um endereço de email válido"
+        },
+        "PASSWORD": {
+            "LABEL": "palavra-passe",
+            "PLEASE_ENTER": "Por favor introduza uma palavra-passe",
+            "MIN_LENGTH": "Sua senha deve ser maior que 8 caracteres",
+            "SAME_PASSWORD": "Você precisa digitar a mesma senha"
+        },
+        "PASSWORD_CONFIRM": {
+            "LABEL": "confirmar senha"
+        },
+        "BUTTON": "Assinar",
+        "HAVE_LOGIN": "Já tem uma conta? Login aqui.",
+        "MESSAGES": {
+            "CONFIRM_SENT": "Confirmação enviado ao",
+            "LOGIN_NOW": "Login",
+            "NO_SIGNUP": "Não poderia assinar usuário até"
+        }
+    },
+    "LOCK": {
+        "TITLE": "Bem-vindo de volta",
+        "LOGGED_OUT": "Que tenha sido iniciada devido à inatividade. Introduza a sua senha para fazer o login novamente.",
+        "PASSWORD": {
+            "LABEL": "palavra-passe",
+            "PLEASE_ENTER": "Por favor, digite a sua senha."
+        },
+        "LOGIN": "De registo em",
+        "LOGOUT": "Registo de fora",
+        "MESSAGES": {
+            "ACCESS_DENIED": "Nome De Utilizador / Palavra-Passe Incorrecta"
+        }
+    },
+    "FORGOT": {
+        "TITLE": "Esqueceu a sua senha?",
+        "ENTER_EMAIL": "Por favor insira o seu e-mail abaixo",
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Por favor, digite seu endereço de e-mail.",
+            "PLEASE_VALID": "Por favor introduza um endereço de email válido."
+        },
+        "RESET": "Repor",
+        "LOGIN": "Lembrou-se? Login aqui",
+        "MESSAGES": {
+            "RESET_SENT": "Sua nova senha foi enviada",
+            "LOGIN_NOW": "Login",
+            "NO_RESET": "Não pode repor a palavra-passe de utilizadores"
+        }
+    },
+    "PROFILE": {
+        "TITLE": "Perfil",
+        "NAME": {
+            "LABEL": "nome",
+            "PLEASE_ENTER": "Por favor digite seu nome"
+        },
+        "EMAIL": {
+            "LABEL": "e-mail",
+            "PLEASE_ENTER": "Por favor, digite seu endereço de e-mail",
+            "PLEASE_VALID": "Por favor introduza um endereço de email válido"
+        },
+        "LOCATION": {
+            "LABEL": "localização"
+        },
+        "WEBSITE": {
+            "LABEL": "site"
+        },
+        "BIO": {
+            "LABEL": "bio"
+        },
+        "TWITTER": {
+            "LABEL": "twitter"
+        },
+        "PASSWORD": {
+            "LABEL": "nova palavra-passe",
+            "CURRENT": "atual",
+            "PLEASE_ENTER": "Por favor introduza uma palavra-passe",
+            "MIN_LENGTH": "Sua senha deve ser maior que 8 caracteres",
+            "SAME_PASSWORD": "Você precisa digitar a mesma senha"
+        },
+        "PASSWORD_CONFIRM": {
+            "LABEL": "confirmar senha"
+        },
+        "BUTTON": "Definições De Actualização"
+    }
+}

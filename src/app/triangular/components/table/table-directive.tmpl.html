@@ -1,0 +1,51 @@
+<table class="md-table">
+    <thead>
+        <tr>
+            <th ng-repeat="column in columns" ng-click="sortClick(column.field)" ng-class="headerClass(column.field)">
+                <md-icon ng-show="showSortOrder(column.field, true)" class="icon-rotate-90" md-font-icon="icon-arrow-back"></md-icon>
+                <md-icon ng-show="showSortOrder(column.field, false)" class="icon-rotate-270" md-font-icon="icon-arrow-back"></md-icon>
+                <span>
+                    {{column.title}}
+                </span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="content in contents | filter:filters | startFrom:page * pageSize | limitTo: pageSize">
+            <td ng-repeat="column in columns" ng-bind-html="cellContents(column, content)" ng-class="column.field + '-cell'"></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="{{columns.length}}">
+                <div class="md-table-footer" layout="row" layout-align="end center">
+                    <div class="md-table-page-select" layout="row" layout-align="center center">
+                        <span>Rows per page:</span>
+                        <md-select ng-model="pageSize" ng-change="refresh(true)">
+                            <md-option value="5">5</md-option>
+                            <md-option value="10">10</md-option>
+                            <md-option value="25">25</md-option>
+                            <md-option value="50">50</md-option>
+                            <md-option value="100">100</md-option>
+                        </md-select>
+                    </div>
+                    <span class="md-table-info">
+                        {{pageStart()}}
+                        -
+                        {{pageEnd()}}
+                        <span translate>TABLES.OF</span>
+                        {{totalItems()}}
+                    </span>
+                    <div class="md-table-page-nav">
+                        <md-button ng-disabled="page == 0" ng-click="page = page - 1" aria-label="{{'TABLES.PREV' | translate}}" class="md-primary md-icon-button">
+                            <md-icon md-font-icon="icon-chevron-left"></md-icon>
+                        </md-button>
+                        <md-button ng-disabled="page == numberOfPages() - 1" ng-click="page = page + 1" aria-label="{{'TABLES.NEXT' | translate}}" class="md-primary md-icon-button">
+                            <md-icon md-font-icon="icon-chevron-right"></md-icon>
+                        </md-button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>

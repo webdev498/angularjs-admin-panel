@@ -1,0 +1,11 @@
+{
+    "MENU": {
+        "SEED": {
+            "SEED-MODULE": "Seed Module",
+            "SEED-PAGE": "Start Page"
+        }
+    },
+    "SEED": {
+        "TITLE": "Welcome to the triangular test page"
+    }
+}

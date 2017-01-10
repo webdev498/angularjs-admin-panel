@@ -1,0 +1,51 @@
+{
+    "404": {
+        "TITLE": "404",
+        "HOME": "Rentrer à la maison",
+        "MESSAGE": "Page non trouvée",
+        "DESCRIPTION": "Désolé, la page que vous recherchez ne se trouve pas ici. Retournez à la page d'accueil et à partir de là."
+    },
+    "500": {
+        "TITLE": "500",
+        "MESSAGE": "Quelque chose s'est mal passé.",
+        "DESCRIPTION": "Désolé, quelque chose a mal tourné.",
+        "HOME": "Rentrer à la maison"
+    },
+    "ADMIN": {
+        "TOOLBAR": {
+            "SETTINGS": "Paramètres",
+            "PROFILE": "Profil",
+            "LOGOUT": "Déconnexion",
+            "SIDEBAR_TOGGLE": "Bascule Menu"
+        },
+        "NOTIFICATIONS": {
+            "ACCOUNT_SETTINGS": "Les Paramètres De Compte",
+            "CHAT_SETTINGS": "Les Paramètres De Chat",
+            "USER_STATS": "Statistiques De L'Utilisateur",
+            "SERVER_STATS": "Statistiques Du Serveur",
+            "SHOW_LOCATION": "Montrer mon emplacement",
+            "SHOW_AVATAR": "Afficher mon avatar",
+            "SEND_NOTIFICATIONS": "M'envoyer les notifications",
+            "ALLOW_BACKUPS": "Permettre les sauvegardes dans le cloud",
+            "SHOW_USERNAME": "Afficher mon nom d'utilisateur",
+            "SHOW_PROFILE": "Rendre mon profil public",
+            "STORAGE_SPACE": "L'Espace De Stockage (120/160 Go)",
+            "BANDWIDTH_USAGAE": "Utilisation De La Bande Passante (10/100 Go)",
+            "MEMORY_USAGAE": "L'Utilisation De La Mémoire (1/8 Go)"
+        }
+    },
+    "LANGUAGES": {
+        "CHINESE": "Chinois",
+        "ENGLISH": "Anglais",
+        "FRENCH": "Français",
+        "PORTUGUESE": "Portugais"
+    },
+    "TABLES": {
+        "NEXT": "Page Suivante",
+        "PREV": "Page Précédente",
+        "OF": "de"
+    },
+    "MESSAGES": {
+        "LANGUAGE_CHANGED": "Langue Changé"
+    }
+}

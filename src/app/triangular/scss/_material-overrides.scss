@@ -1,0 +1,32 @@
+// Overrides
+
+a {
+  color: #00BCD4;
+}
+
+body[md-theme="dark"] {
+  background-color: #3a3a3a;
+}
+.md-dark-theme {
+  color: rgba(255, 255, 255, .7) !important;
+  a {
+    color: #ffffff;
+  }
+}
+.md-list-item-inner {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+md-card md-card-content {
+  display: block;
+}
+
+ui-gmap-google-map img {
+  max-width: none;
+}
+
+#footer .md-toolbar-tools h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}

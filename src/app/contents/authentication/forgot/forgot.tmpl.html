@@ -1,0 +1,31 @@
+<div layout="row" flex layout-padding layout-fill layout-align="center center">
+    <div flex="40" flex-lg="50" flex-md="70" flex-sm="100">
+        <md-card>
+            <md-toolbar>
+                <div class="padding-20 text-center">
+                    <div><img ng-src="{{::vm.triSettings.logo}}" alt="{{vm.triSettings.name}}"></div>
+                    <h1 class="md-headline" translate>FORGOT.TITLE</h1>
+                </div>
+            </md-toolbar>
+
+            <md-content class="md-padding">
+                <p translate>FORGOT.ENTER_EMAIL</p>
+                <form name="forgot">
+                    <md-input-container>
+                        <label for="email" translate>FORGOT.EMAIL.LABEL</label>
+                        <input id="email" label="email" name="email" type="email" ng-model="vm.user.email" required/>
+                        <div ng-messages="forgot.email.$error" ng-if="forgot.email.$dirty">
+                            <div ng-message when="required"><span translate>FORGOT.EMAIL.PLEASE_ENTER</span></div>
+                            <div ng-message when="email"><span translate>FORGOT.EMAIL.PLEASE_VALID</span></div>
+                        </div>
+                    </md-input-container>
+
+                    <md-button class="md-raised md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10" ng-click="vm.resetClick()" ng-disabled="forgot.$invalid" translate="FORGOT.RESET" aria-label="{{'FORGOT.RESET' | translate}}"></md-button>
+
+                    <md-button class="md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10" href="#/login" translate="FORGOT.LOGIN" aria-label="{{'FORGOT.LOGIN' | translate}}"></md-button>
+                </form>
+            </md-content>
+        </md-card>
+
+    </div>
+</div>

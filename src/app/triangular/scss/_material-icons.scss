@@ -1,0 +1,23 @@
+/*!
+ *  Material Design Iconic Font 1.0.1 by Sergey Kupletsky (@zavoloklom) - http://zavoloklom.github.io/material-design-iconic-font/
+ *  License - https://github.com/zavoloklom/material-design-iconic-font/blob/gh-pages/License.md (Attribution-ShareAlike 4.0 International license)
+ */
+
+// Variables
+// --------------------------
+$md-font-path: "../bower_components/material-design-iconic-font/fonts";
+$md-css-prefix: icon;
+$md-version: "1.0.1";
+
+$md-border-color: gray;
+
+// @import "bower_components/material-design-iconic-font/scss/_variables.scss";
+@import "material-design-iconic-font/scss/_mixins.scss";
+@import "material-design-iconic-font/scss/_path.scss";
+@import "material-design-iconic-font/scss/_core.scss";
+@import "material-design-iconic-font/scss/_sizes.scss";
+@import "material-design-iconic-font/scss/_border.scss";
+@import "material-design-iconic-font/scss/_pulled.scss";
+@import "material-design-iconic-font/scss/_spinned.scss";
+@import "material-design-iconic-font/scss/_rotated.scss";
+@import "material-design-iconic-font/scss/_icons.scss";

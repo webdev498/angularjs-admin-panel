@@ -1,0 +1,17 @@
+<md-toolbar class="sidebar-left-toolbar" md-theme="{{::triSkin.elements.logo}}">
+    <div class="md-toolbar-tools" layout="row" layout-align="start center">
+
+        <div class="sidebar-left-logo">
+            <img ng-src="{{::vm.sidebarInfo.appLogo}}" alt="{{::vm.sidebarInfo.appName}}" width="80px">
+        </div>
+
+        <h2 flex class="sidebar-left-title">{{::vm.sidebarInfo.appName}}</h2>
+
+        <md-button class="md-icon-button sidebar-left-icon" ng-click="vm.toggleIconMenu()" aria-label="Open side menu">
+            <md-icon md-font-icon ng-class="{ 'icon-unfold-more' : vm.layout.sideMenuSize == 'icon', 'icon-unfold-less' : vm.layout.sideMenuSize == 'full' }"></md-icon>
+        </md-button>
+
+    </div>
+</md-toolbar>
+
+<tri-menu md-theme="{{triSkin.elements['sidebar']}}" flex></tri-menu>

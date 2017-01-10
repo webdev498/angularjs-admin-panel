@@ -1,0 +1,66 @@
+<md-content laout="column" flex>
+    <div ng-controller="OrganizationsTableController as vm">
+        <md-data-table-toolbar ng-hide="vm.selected.length || vm.filter.show">
+            <div flex></div>
+            <md-button class="md-icon-button" ng-click="vm.filter.show = true">
+                <!-- <i class="material-icons md-dark">filter_list</i> -->
+                <md-icon md-font-icon="icon-filter-list"></md-icon>
+            </md-button>
+        </md-data-table-toolbar>
+
+        <md-data-table-toolbar ng-show="vm.filter.show && !vm.selected.length" class="md-data-table-toolbar">
+            <md-icon md-font-icon="icon-search"></md-icon>
+            <form flex="" name="vm.filter.form">
+                <input type="text" ng-model="vm.query.filter" ng-model-options="vm.filter.options" placeholder="search">
+            </form>
+            <md-button class="md-icon-button" ng-click="vm.removeFilter()">
+                <md-icon md-font-icon="icon-close"></md-icon>
+            </md-button>
+        </md-data-table-toolbar>
+
+        <md-data-table-toolbar class="alternate" ng-show="vm.selected.length">
+            <div flex>{{vm.selected.length}} {{vm.selected.length > 1 ? 'organizations' : 'organization'}}
+                {{'CONTACTS.SELECTED' | translate}}
+            </div>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="vm.deleteSelected($event)">
+                <md-icon md-font-icon="icon-block"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" ng-click="vm.deleteSelected($event)">
+                <md-icon md-font-icon="icon-delete"></md-icon>
+            </md-button>
+        </md-data-table-toolbar>
+        <md-tabs>
+            <md-tab label="Customers"></md-tab>
+            <md-tab label="Suppliers"></md-tab>
+            <md-tab label="All"></md-tab>
+        </md-tabs>
+        <md-data-table-container>
+            <table md-data-table class="md-data-table" md-row-select="vm.selected" md-progress="vm.promise">
+                <thead md-order="vm.query.sort" md-trigger="vm.getOrgs">
+                <tr>
+                    <th order-by="reference" name="Reference"></th>
+                    <th order-by="name" name="Name"></th>
+                    <th name="Nickname"></th>
+                    <th name="Created"></th>
+                    <th name="Modified"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr md-auto-select ng-repeat="org in vm.orgs">
+                    <td>{{::org.reference}}</td>
+                    <td>{{::org.name}}</td>
+                    <td>{{::org.nickname}}</td>
+                    <td>{{::org.created_at | date: 'medium'}}</td>
+                    <td>{{::org.modified_at | date: 'medium'}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </md-data-table-container>
+
+        <md-data-table-pagination md-limit="vm.query.page_size" md-page="vm.query.page"
+                                  md-total="{{vm.orgs.meta.pagination.count}}"
+                                  md-trigger="vm.getOrgs"
+                                  md-row-select="[10, 25, 50, 100]"></md-data-table-pagination>
+    </div>
+</md-content>

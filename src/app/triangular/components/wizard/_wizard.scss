@@ -1,0 +1,24 @@
+[tri-wizard] {
+  .md-tab {
+    .oxy-step-label {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      margin-right: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+    &.md-active .oxy-step-label {
+      border: 2px solid #ffffff;
+    }
+  }
+
+  .big-icon {
+    font-size: 48px;
+  }
+
+  .wizard-navbar {
+    background-color: white;
+  }
+}

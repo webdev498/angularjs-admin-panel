@@ -1,0 +1,51 @@
+{
+    "404": {
+        "TITLE": "404",
+        "HOME": "回家去",
+        "MESSAGE": "主页上找不到的",
+        "DESCRIPTION": "抱歉，第一页你们要找的人不能找到这里的。 回家页，并从那里开始。"
+    },
+    "500": {
+        "TITLE": "500",
+        "MESSAGE": "出了点问题。",
+        "DESCRIPTION": "对不起，出了点问题了",
+        "HOME": "回家去"
+    },
+    "ADMIN": {
+        "TOOLBAR": {
+            "SETTINGS": "环境下",
+            "PROFILE": "简介",
+            "LOGOUT": "注销",
+            "SIDEBAR_TOGGLE": "反复的菜单"
+        },
+        "NOTIFICATIONS": {
+            "ACCOUNT_SETTINGS": "账户环境中",
+            "CHAT_SETTINGS": "聊天的环境中",
+            "USER_STATS": "用户统计",
+            "SERVER_STATS": "服务的统计数字",
+            "SHOW_LOCATION": "露我的位置",
+            "SHOW_AVATAR": "看我的化身",
+            "SEND_NOTIFICATIONS": "把我送通知",
+            "ALLOW_BACKUPS": "请允许云备份",
+            "SHOW_USERNAME": "给我的用户名",
+            "SHOW_PROFILE": "让我的公众形象",
+            "STORAGE_SPACE": "存储空间(120/160Gb)",
+            "BANDWIDTH_USAGAE": "带宽的使用情况（10/100Gb)",
+            "MEMORY_USAGAE": "记忆使用情况（第1/8英国)"
+        }
+    },
+    "LANGUAGES": {
+        "CHINESE": "中文",
+        "ENGLISH": "英文",
+        "FRENCH": "法语",
+        "PORTUGUESE": "葡萄牙"
+    },
+    "TABLES": {
+        "NEXT": "下一页",
+        "PREV": "前页",
+        "OF": "的"
+    },
+    "MESSAGES": {
+        "LANGUAGE_CHANGED": "措辞的改变"
+    }
+}

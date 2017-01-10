@@ -1,0 +1,56 @@
+<div layout="row" flex layout-padding layout-fill layout-align="center center">
+    <div flex="40" flex-lg="50" flex-md="70" flex-sm="100">
+        <md-card>
+            <md-toolbar>
+                <div class="padding-20 text-center">
+                    <div><img ng-src="{{::vm.triSettings.logo}}" alt="{{vm.triSettings.name}}"></div>
+                    <h1 class="md-headline" translate>SIGNUP.TITLE</h1>
+                </div>
+            </md-toolbar>
+
+            <md-content class="md-padding">
+                <form name="signup">
+                    <md-input-container>
+                        <label for="name" translate>SIGNUP.NAME.LABEL</label>
+                        <input id="name" label="name" name="name" type="text" ng-model="vm.user.name" required/>
+                        <div ng-messages="signup.name.$error" ng-if="signup.name.$dirty">
+                            <div ng-message when="required">
+                                <span translate>SIGNUP.NAME.PLEASE_ENTER</span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container>
+                        <label for="email" translate>SIGNUP.EMAIL.LABEL</label>
+                        <input id="email" label="email" name="email" type="email" ng-model="vm.user.email" required/>
+                        <div ng-messages="signup.email.$error" ng-if="signup.email.$dirty">
+                            <div ng-message when="required">
+                                <span translate>SIGNUP.EMAIL.PLEASE_ENTER</span>
+                            </div>
+                            <div ng-message when="email">
+                                <span translate>SIGNUP.EMAIL.PLEASE_VALID</span>
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label for="password" translate>SIGNUP.PASSWORD.LABEL</label>
+                        <input id="password" label="password" name="password" type="password" ng-model="vm.user.password" tri-same-password="signup.confirm" ng-minlength="8" required/>
+                        <ng-messages for="signup.password.$error" ng-include="'app/contents/authentication/signup/password.messages.html'" ng-if="signup.password.$dirty"></ng-messages>
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label for="password" translate>SIGNUP.PASSWORD_CONFIRM.LABEL</label>
+                        <input id="confirm" label="confirm" name="confirm" type="password" ng-model="vm.user.confirm" tri-same-password="signup.password" ng-minlength="8" required/>
+                        <ng-messages for="signup.confirm.$error" ng-include="'app/contents/authentication/signup/password.messages.html'" ng-if="signup.confirm.$dirty"></ng-messages>
+                    </md-input-container>
+
+                    <md-button class="md-raised md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10" ng-click="vm.signupClick()" ng-disabled="signup.$invalid" translate="SIGNUP.BUTTON" aria-label="{{'SIGNUP.BUTTON' | translate}}"></md-button>
+
+                    <md-button  class="md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10" href="#/login" translate="SIGNUP.HAVE_LOGIN" aria-label="{{'SIGNUP.HAVE_LOGIN' | translate}}"></md-button>
+
+                </form>
+            </md-content>
+
+        </md-card>
+    </div>
+</div>

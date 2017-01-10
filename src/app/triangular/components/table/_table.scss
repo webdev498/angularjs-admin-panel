@@ -1,0 +1,86 @@
+.md-table {
+    border-collapse: collapse;
+    min-width: 100%;
+
+    thead {
+      tr {
+        height: 56px;
+        th {
+          vertical-align: middle;
+          border-bottom: 1px solid #EEEEEE;
+          color: rgba(0, 0, 0, 0.54);
+
+          &:focus {
+            outline: none;
+          }
+
+          &.sorted {
+            color: rgba(0, 0, 0, 0.84);
+          }
+
+          &.sortable:hover {
+            cursor: pointer !important;
+            span {
+              color: rgba(0, 0, 0, 0.84);
+            }
+          }
+
+          span {
+            font-size: 12px;
+            letter-spacing: 0.02em;
+          }
+
+          md-icon .md-font {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        height: 48px;
+
+        &:hover {
+          background: #EEEEEE;
+        }
+
+        td {
+          color: rgba(0, 0, 0, 0.87);
+          font-size: 13px;
+          vertical-align: middle;
+          border-bottom: 1px solid #EEEEEE;
+        }
+      }
+    }
+
+    tfoot {
+      .md-table-footer {
+        font-size: 12px;
+        height: 56px;
+        color: rgba(0, 0, 0, 0.54);
+
+        .md-table-page-select {
+          md-select {
+            margin: 0;
+            padding: 0;
+            margin-left: 20px;
+            md-select-label {
+              padding: 5px;
+            }
+          }
+        }
+
+        .md-table-info {
+          margin-left: 32px;
+        }
+
+        .md-table-page-nav {
+          margin-left: 32px;
+          .md-button {
+            margin: 0;
+          }
+        }
+      }
+    }
+}

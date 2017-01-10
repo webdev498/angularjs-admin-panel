@@ -1,0 +1,11 @@
+{
+    "MENU": {
+        "SEED": {
+            "SEED-MODULE": "种子模块",
+            "SEED-PAGE": "开始页"
+        }
+    },
+    "SEED": {
+        "TITLE": "欢迎来到第三角测试页"
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "MENU": {
+        "AUTH": {
+            "AUTH": "认证",
+            "LOGIN": "登陆",
+            "SIGN_UP": "签了",
+            "FORGOT": "忘了密码",
+            "LOCK": "锁页",
+            "PROFILE": "简介"
+        }
+    },
+    "HEADER": {
+        "HEADING": "三角"
+    },
+    "LOGIN": {
+        "TITLE": "登陆",
+        "EMAIL": {
+            "LABEL": "电子邮件",
+            "PLEASE_ENTER": "请输入你的电子邮件地址。",
+            "PLEASE_VALID": "请输入的一个有效的电邮地址。"
+        },
+        "PASSWORD": {
+            "LABEL": "密码",
+            "PLEASE_ENTER": "请输入你的密码"
+        },
+        "REMEMBER": "还记得我",
+        "FORGOT": "忘了密码?",
+        "BUTTON": "登陆",
+        "SIGNUP_LINK": "没有一个账户? 创造一个现在",
+        "SOCIAL": {
+            "OR": "或者登陆与"
+        },
+        "MESSAGES": {
+            "ACCESS_DENIED": "用户名和密码不正确"
+        }
+    },
+    "SIGNUP": {
+        "TITLE": "签了",
+        "NAME": {
+            "LABEL": "的名字",
+            "PLEASE_ENTER": "请输入你的名字"
+        },
+        "EMAIL": {
+            "LABEL": "电子邮件",
+            "PLEASE_ENTER": "请输入你的电子邮件地址",
+            "PLEASE_VALID": "请输入的一个有效的电邮地址"
+        },
+        "PASSWORD": {
+            "LABEL": "密码",
+            "PLEASE_ENTER": "请输入密码",
+            "MIN_LENGTH": "你的密码必须超过8个字符长",
+            "SAME_PASSWORD": "你得输入密码"
+        },
+        "PASSWORD_CONFIRM": {
+            "LABEL": "确认密码"
+        },
+        "BUTTON": "签了",
+        "HAVE_LOGIN": "已经有一个帐户吗？ 登录在这里",
+        "MESSAGES": {
+            "CONFIRM_SENT": "确认发送给",
+            "LOGIN_NOW": "登陆",
+            "NO_SIGNUP": "能不签，多用户来"
+        }
+    },
+    "LOCK": {
+        "TITLE": "欢迎回来",
+        "LOGGED_OUT": "你已经退出的原因懒惰的行为。 输入你的密码登录进来了",
+        "PASSWORD": {
+            "LABEL": "密码",
+            "PLEASE_ENTER": "请输入你的密码"
+        },
+        "LOGIN": "登陆",
+        "LOGOUT": "记下来",
+        "MESSAGES": {
+            "ACCESS_DENIED": "用户名和密码不正确"
+        }
+    },
+    "FORGOT": {
+        "TITLE": "忘了你的密码?",
+        "ENTER_EMAIL": "请输入你的电子邮件下",
+        "EMAIL": {
+            "LABEL": "电子邮件",
+            "PLEASE_ENTER": "请输入你的电子邮件地址。",
+            "PLEASE_VALID": "请输入的一个有效的电邮地址。"
+        },
+        "RESET": "重新设置",
+        "LOGIN": "记得吗? 登录在这里",
+        "MESSAGES": {
+            "RESET_SENT": "你的新的密码就一直是邮寄的",
+            "LOGIN_NOW": "登陆",
+            "NO_RESET": "不可能重置的用户密码"
+        }
+    },
+    "PROFILE": {
+        "TITLE": "简介",
+        "NAME": {
+            "LABEL": "的名字",
+            "PLEASE_ENTER": "请输入你的名字"
+        },
+        "EMAIL": {
+            "LABEL": "电子邮件",
+            "PLEASE_ENTER": "请输入你的电子邮件地址",
+            "PLEASE_VALID": "请输入的一个有效的电邮地址"
+        },
+        "LOCATION": {
+            "LABEL": "地点"
+        },
+        "WEBSITE": {
+            "LABEL": "网站"
+        },
+        "BIO": {
+            "LABEL": "生物"
+        },
+        "TWITTER": {
+            "LABEL": "twitter"
+        },
+        "PASSWORD": {
+            "LABEL": "新密码",
+            "CURRENT": "目前的",
+            "PLEASE_ENTER": "请输入密码",
+            "MIN_LENGTH": "你的密码必须超过8个字符长",
+            "SAME_PASSWORD": "你得输入密码"
+        },
+        "PASSWORD_CONFIRM": {
+            "LABEL": "确认密码"
+        },
+        "BUTTON": "更新环境"
+    }
+}

@@ -1,0 +1,33 @@
+<md-dialog aria-label="Delete Confirmation">
+    <md-dialog-content>
+        <h2 class="md-title">Delete organization</h2>
+
+        <p>
+            You are about to delete the organization "{{ctrl.item.attributes.name}}" and <b>ALL</b> its related
+            information.
+            <br>
+            To confirm please enter its reference number.
+        </p>
+
+        <form name="confirmationForm" ng-submit="ctrl.confirm()">
+            <md-input-container class="md-default-theme">
+                <label for="reference">Reference number</label>
+                <input name="reference" type="text" ng-model="ctrl.reference" id="reference" label="Reference" required />
+
+                <div ng-messages="confirmationForm.reference.$error" ng-show="confirmationForm.reference.$dirty">
+                    <div ng-message when="required">
+                        Please enter the organization reference number.
+                    </div>
+                </div>
+            </md-input-container>
+        </form>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button ng-click="ctrl.confirm()" ng-disabled="!ctrl.referenceIsValid(ctrl)">
+            Confirm
+        </md-button>
+        <md-button ng-click="ctrl.cancel()" style="margin-right:20px;">
+            Cancel
+        </md-button>
+    </div>
+</md-dialog>
